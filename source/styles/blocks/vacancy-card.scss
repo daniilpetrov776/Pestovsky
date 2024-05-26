@@ -1,0 +1,16 @@
+.vacancy-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 3px #999999;
+  gap: 20px;
+  border-radius: 30px;
+  min-height: 130px;
+  padding-left: 65px;
+  font-weight: 700;
+}
+
+.vacancy-card__salary {
+  text-transform: uppercase;
+  color: #21a038;
+}

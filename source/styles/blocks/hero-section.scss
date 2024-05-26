@@ -1,0 +1,26 @@
+.hero-section {
+  min-height: 500px;
+  background-image: url("../../images/hero-image@1x.jpg");
+  background-color: #000000;
+  background-position: center top;
+  background-size: 100% auto;
+  text-align: center;
+
+  @supports (background-image: url("../../images/hero-image@1x.webp")) {
+    background-image: url("../../images/hero-image@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/hero-image@2x.jpg");
+
+    @supports (background-image: url("../../images/hero-image@2x.webp")) {
+      background-image: url("../../images/hero-image@2x.webp");
+    }
+  }
+}
+
+.hero-section__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}

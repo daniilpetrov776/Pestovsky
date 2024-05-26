@@ -1,0 +1,12 @@
+.join-button-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  border: solid 3px #36853b;
+  display: flex;
+  flex-direction: column;
+  padding: 26.5px 20px;
+}
+
+.join-button-wrapper__text {
+  font-weight: 700;
+}

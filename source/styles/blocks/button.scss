@@ -1,0 +1,23 @@
+.button {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+  border: solid 3px #999999;
+  border-radius: 5px;
+
+  &--active {
+    background-color: #999999;
+    color: #212121;
+  }
+
+  &--wider {
+    min-width: 108px;
+  }
+
+  &--XL {
+    min-width: 150px;
+  }
+}

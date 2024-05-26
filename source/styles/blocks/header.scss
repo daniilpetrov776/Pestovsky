@@ -2,4 +2,15 @@
   background-color: #111311;
   color: #ffffff;
   padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__logo-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
