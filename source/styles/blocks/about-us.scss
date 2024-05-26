@@ -3,10 +3,16 @@
   text-align: center;
 }
 
+.about-us__section-title {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
 .about-us__list {
   display: flex;
   flex-direction: column;
   place-items: center;
+  margin: 0;
 }
 
 .about-us__parameter {
@@ -21,6 +27,7 @@
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .about-us__defenition {
@@ -28,4 +35,12 @@
   font-size: 16px;
   line-height: 20px;
   padding: 0 45px;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  &:last-child {
+    margin-bottom: 45px;
+  }
 }

@@ -3,8 +3,14 @@
   padding: 0;
 }
 
+.contacts__title {
+  margin: 26px 0 16px;
+  line-height: 64px;
+}
+
 .contacts__list {
   padding: 0 20px;
+  margin: 40px 0 42px;
   list-style-type: none;
 }
 
@@ -31,4 +37,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.contacts__socials {
+  margin: 0 0 42px;
 }

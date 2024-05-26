@@ -4,14 +4,19 @@
   background-size: contain;
   background-position: center;
   min-height: 567px;
+  padding: 0 20px 35px;
 }
 
+.join-us__slogan-wrapper {
+  padding: 45px 0 0;
+}
 
 .join-us__slogan {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 0 24px;
 }
 
 .join-us__join-button-wrapper {

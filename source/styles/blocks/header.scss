@@ -1,8 +1,8 @@
 .header {
   background-color: #111311;
   color: #ffffff;
-  padding: 10px 15px;
   display: flex;
+  padding: 5px 10px 5px 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -13,4 +13,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.header-contacts {
+  margin: 0;
 }
