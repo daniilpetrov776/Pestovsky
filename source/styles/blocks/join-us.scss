@@ -1,7 +1,8 @@
 .join-us {
-  background-image: url("../../images/company-people.svg");
+  background-image: url("../../images/company-people.svg"),
+  url("../../images/cloud@1x.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain, cover;
   background-position: center;
   min-height: 567px;
   padding: 0 20px 35px;

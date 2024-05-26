@@ -12,6 +12,28 @@
   padding: 0 20px;
   margin: 40px 0 42px;
   list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 16px;
+}
+
+.contacts__list-item {
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  flex-flow: wrap;
+
+  &::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  border: solid 0.5px #21A038;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -6px;
+}
 }
 
 .contacts__link {
@@ -24,7 +46,7 @@
 .contacts__text {
   font-weight: 700;
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 17px;
 
   &--decoration {
     text-decoration: underline;

@@ -90,11 +90,21 @@
       <section class="page__section advantages">
         <h2 class="advantages__title section-title">Преимущества Компании</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--pd-taller">Качество продукта</li>
-          <li class="advantages__item advantages__item--pd-taller">Популярность бренда в сети</li>
-          <li class="advantages__item advantages__item--pd-taller">Передовое рабочее место</li>
-          <li class="advantages__item">Свои автоматизированные системы обучения</li>
-          <li class="advantages__item">Сотрудничество с ведущими Компаниями рынка</li>
+          <li class="advantages__item advantages__item--pd-taller">
+            <span class="advantages__item-text">Качество продукта</span>
+          </li>
+          <li class="advantages__item advantages__item--pd-taller">
+            <span class="advantages__item-text">Популярность бренда в сети</span>
+          </li>
+          <li class="advantages__item advantages__item--pd-taller">
+            <span class="advantages__item-text">Передовое рабочее место</span>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__item-text">Свои автоматизированные системы обучения</span>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__item-text">Сотрудничество с ведущими Компаниями рынка</span>
+          </li>
         </ul>
       </section>
       <article class="page__section products">
@@ -166,12 +176,24 @@
         <p class="career__review">Мы ценим стремление к развитию и предоставляем все необходимые для этого условия.</p>
         <div class="career__slider slider">
           <div class="slider__wrapper slider__wrapper--career">
+            <button class="slider__slider-button slider__slider-button--career slider__slider-button--prev" type="button">
+              <svg class="slider__icon slider__icon--left" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./icons/stack.svg#arrow-left"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider__slider-button slider__slider-button--career slider__slider-button--next" type="button">
+              <svg class="slider__icon slider__icon--right" width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./icons/stack.svg#arrow-right"></use>
+              </svg>
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
             <ul class="slider__list">
               <li class="slider__item career-card">
-                <picture>
-                  <source media="(min-width: 320px)" srcset="images/employee-man-1@1x.webp 1x, images/employee-man-1@2x.webp 2x"  width="238" height="240" type="image/webp">
-                  <img class="career-card__image" src="images/employee-man-1@1x.png" srcset="images/employee-man-1@2x.png 2x" width="238" height="240" alt="Успешный сотрудник компании - прораб.">
-                </picture>
+                  <picture>
+                    <source media="(min-width: 320px)" srcset="images/employee-man-1@1x.webp 1x, images/employee-man-1@2x.webp 2x"  width="238" height="240" type="image/webp">
+                    <img class="career-card__image" src="images/employee-man-1@1x.png" srcset="images/employee-man-1@2x.png 2x" width="238" height="240" alt="Успешный сотрудник компании - прораб.">
+                  </picture>
                 <h3 class="career-card__title">Олег Воробьёв</h3>
                 <p class="career-card__vacancy-title">Прораб</p>
                 <ul class="career-card__about-list">
@@ -207,12 +229,6 @@
                 </ul>
               </li>
             </ul>
-            <button class="slider__slider-button slider__slider-button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд.</span>
-            </button>
-            <button class="slider__slider-button slider__slider-button--next" type="button">
-              <span class="visually-hidden">Следующий слайд.</span>
-            </button>
           </div>
         </div>
       </section>

@@ -21,13 +21,41 @@
     padding: 16.5px 0;
   }
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #21a038;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
   &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../../images/plus.svg);
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+.advantages__item-text {
+  position: relative;
+
+&::after {
     position: absolute;
     content: "";
     width: 100vw;
     height: 3px;
     background-color: #999999;
     left: calc((100vw - 100%) / -2);
-    bottom: 0;
+    bottom: -16px;
   }
 }
