@@ -27,6 +27,10 @@
   text-underline-position: below;
   text-underline-offset: 2px;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   &--decoration {
     font-size: 12px;
   }

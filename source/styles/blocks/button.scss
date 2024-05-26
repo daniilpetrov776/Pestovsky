@@ -7,6 +7,12 @@
   color: #ffffff;
   border: solid 3px #999999;
   border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #999999;
+    color: #212121;
+  }
 
   &--active {
     background-color: #999999;

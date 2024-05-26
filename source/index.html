@@ -10,10 +10,11 @@
   <body class="page__body">
     <header class="page__header header">
       <div class="header__burger burger">
-
       </div>
       <div class="header__logo-wrapper logo-wrapper">
-        <img src="images/logo.svg" alt="Логотип Пестовского лесокомбината." width="59" height="30">
+        <a class="logo-wrapper__link" href="#">
+          <img src="images/logo.svg" alt="Логотип Пестовского лесокомбината." width="59" height="30">
+        </a>
       </div>
       <ul class="header__header-contacts header-contacts">
         <li class="header-contacts__item">
@@ -29,6 +30,78 @@
         <h1 class="hero-section__title">«Пестовский Лесокомбинат»</h1>
         <p class="hero-section__text">Cтань частью нашей команды!</p>
         <button class="hero-section__button button-smooth" type="button">Отправить анкету</button>
+      </section>
+      <section class="page__section questionnaire hidden">
+        <footer class="questionnaire__footer">
+          <button class="questionnaire__button" type="button">
+            <svg class="questionnaire__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./icons/stack.svg#close"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть анкету.</span>
+          </button>
+        </footer>
+        <div class="questionnaire__questionnaire-wrapper questionnaire-wrapper">
+          <h2 class="visually-hidden">Анкета претендента.</h2>
+          <p class="questionnaire__title section-title">заполните анкету</p>
+          <form class="questionnaire__questionnaire-form questionnaire-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="questionnaire-form__input-wrapper questionnaire-form__input-wrapper--decoration">
+              <label class="questionnaire-form__text-input-label" for="name"></label>
+              <input class="questionnaire-form__text-input" placeholder="Ф.И.О" id="name" name="name" type="text">
+            </div>
+            <div class="questionnaire-form__input-wrapper questionnaire-form__input-wrapper--decoration">
+              <label class="questionnaire-form__text-input-label" for="phone"></label>
+              <input class="questionnaire-form__text-input" placeholder="Телефон" id="phone" name="phone" type="text">
+            </div>
+            <div class="questionnaire-form__input-wrapper questionnaire-form__input-wrapper--decoration">
+              <label class="questionnaire-form__input-label" for="choose">Отклик на вакансию</label>
+              <select class="questionnaire-form__select" name="vacancy" id="choose">
+                <option value="">Выберите вакансию</option>
+                <option value="foreman">Прораб</option>
+                <option value="supply">Специалист службы снабжения</option>
+                <option value="logistics">Логист</option>
+                <option value="planner">Проектировщик</option>
+              </select>
+            </div>
+            <div class="questionnaire-form__input-wrapper">
+              <h3 class="questionnaire-form__input-title">Ваше резюме</h3>
+              <p class="questionnaire-form__text">Есть резюме в формате .pdf или .doc?
+                Приложите и отправьте его нам.</p>
+              <button class="questionnaire-form__button button-smooth button-smooth--alternative" type="button">
+                <label class="questionnaire-form__file-label" for="file">Загрузить файл</label>
+                <input class="questionnaire-form__file visually-hidden" name="file" id="file" type="file">
+              </button>
+            </div>
+            <div class="questionnaire-form__input-wrapper questionnaire-form__input-wrapper--checkbox">
+              <label class="questionnaire-form__input-text" for="pegi"><p class="questionnaire-form__paragraph">Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных для использования предоставляемых возможностей Веб-сервиса.</p>
+                <p class="questionnaire-form__paragraph">Я достиг(ла) 18-летнего возраста</p>
+                </label>
+              <input type="checkbox" id="pegi" name="consent" required>
+            </div>
+            <button class="questionnaire__submit-button button-smooth " type="submit">Отправить анкету</button>
+          </form>
+        </div>
+      </section>
+      <section class="page__section questionnaire questionnaire--success hidden">
+        <footer class="questionnaire__footer">
+          <button class="questionnaire__button" type="button">
+            <svg class="questionnaire__icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./icons/stack.svg#close"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть анкету.</span>
+          </button>
+        </footer>
+        <div class="questionnaire__questionnaire-wrapper questionnaire-wrapper">
+          <h2 class="visually-hidden">Анкета отправлена</h2>
+          <p class="questionnaire__title questionnaire__title--success section-title">Анкета отправлена</p>
+          <svg class="questionnaire__icon questionnaire__icon--success" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./icons/stack.svg#success"></use>
+          </svg>
+          <div class="questionnaire__text-wrapper">
+            <p class="questionnaire__text">Благодарим за ваш отклик и интерес.</p>
+            <p class="questionnaire__text">Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.</p>
+          </div>
+          <button class="questionnaire__submit-button questionnaire__submit-button--success button-smooth " type="submit">На главную</button>
+        </div>
       </section>
       <section class="page__section about-us">
         <h2 class="about-us__section-title section-title">о компании</h2>
@@ -275,32 +348,29 @@
               <svg class="contacts__icon" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./icons/stack.svg#marker"></use>
               </svg>
-              <span class="contacts__text contacts__text--decoration">ул. Заозёрная, д. 8 к. 2, офис<br> 202 (7 мин. пешком от метро Фрунзенская)</span>
+              <a href="https://yandex.ru/maps/-/CDfuIIyG" class="contacts__text contacts__text--decoration">ул. Заозёрная, д. 8 к. 2, офис<br> 202 (7 мин. пешком от метро Фрунзенская)</a>
             </address>
           </li>
         </ul>
         <ul class="contacts__socials socials">
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="https://www.youtube.com/@pplk_ru">
               <span class="visually-hidden">Ютуб.</span>
-              <svg class="socials__icon" width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./icons/stack.svg#youtube"></use>
+              <svg class="socials__icon socials__icon--youtube" width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="https://vk.com/doma_i_bani_iz_brusa">
               <span class="visually-hidden">Вконтакте.</span>
-              <svg class="socials__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./icons/stack.svg#vk"></use>
+              <svg class="socials__icon socials__icon--vk" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="https://t.me/plkombinat">
               <span class="visually-hidden">Телеграм.</span>
-              <svg class="socials__icon" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="./icons/stack.svg#telegram"></use>
+              <svg class="socials__icon socials__icon--telegram" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               </svg>
             </a>
           </li>

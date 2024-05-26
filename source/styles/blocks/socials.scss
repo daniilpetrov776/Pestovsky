@@ -6,4 +6,44 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+
 }
+
+.socials__link {
+  &:hover .socials__icon {
+    background: #007bff;
+  }
+
+  &:hover .socials__icon--youtube {
+    background: #ff0000;
+  }
+}
+
+.socials__icon {
+  transition:  background 0.3s;
+}
+
+.socials__icon--youtube {
+    mask-size:  50px 36px;
+    width: 50px;
+    height: 36px;
+    background: #999999;
+    mask: url("../../icons/stack.svg#youtube")  center center no-repeat;
+  }
+
+  .socials__icon--vk {
+    mask-size:  42px 42px;
+    width: 42px;
+    height: 42px;
+    background: #999999;
+    mask: url("../../icons/stack.svg#vk")  center center no-repeat;
+  }
+
+  .socials__icon--telegram {
+    mask-size:  42px 42px;
+    width: 42px;
+    height: 42px;
+    background: #999999;
+    mask: url("../../icons/stack.svg#telegram")  center center no-repeat;
+  }
