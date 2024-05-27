@@ -17,6 +17,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #999999;
+    padding: 0 0 0 10px;
   }
 }
 
@@ -39,7 +40,8 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  padding: 20px 0 0;
+  padding: 20px 0 0 9px;
+  word-spacing: -3px;
 }
 
 .questionnaire-form__text {
@@ -50,6 +52,8 @@
 .questionnaire-form__input-text {
   font-size: 10px;
   line-height: 15px;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .questionnaire-form__input-wrapper--checkbox {
@@ -66,19 +70,24 @@
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
+  padding: 0 0 0 7px;
+  word-spacing: 5px;
 }
 
 .questionnaire-form__paragraph {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
+  word-spacing: -3px;
 }
 
 .questionnaire-form__input-title {
   font-size: 18px;
   line-height: 22px;
-  margin: 20px 0 15px;
+  margin: 20px 0 15px 8px;
 }
 
 .questionnaire-form__button {
+  padding: 10px 34px;
   margin: 15px 0 35px;
-  width: 184px;
+  width: 160px;
+  min-width: 184px;
 }

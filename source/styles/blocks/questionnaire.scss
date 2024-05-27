@@ -15,6 +15,8 @@
 .questionnaire__button {
   background-color: transparent;
   border: none;
+  position: absolute;
+  right: 7px;
 }
 
 .questionnaire__footer {
@@ -23,13 +25,16 @@
   justify-content: flex-end;
   background-color: #111311;
   width: 100%;
+  position: relative;
+  min-height: 44px;
 }
 
 .questionnaire__submit-button {
-  margin: 15px 0 45px;
+  margin: 20px 0 45px;
 
   &--success {
     margin: 0 0 45px;
+    min-width: 156px;
   }
 }
 
@@ -42,10 +47,11 @@
   margin: 0;
 
   &:not(:last-child) {
-    margin: 0 0 23px;
+    margin: 0 0 15px;
   }
 }
 
 .questionnaire__text-wrapper {
   margin: 45px 0 100px;
+  padding: 0 40px;
 }
