@@ -66,14 +66,14 @@
               <h3 class="questionnaire-form__input-title">Ваше резюме</h3>
               <p class="questionnaire-form__text">Есть резюме в формате .pdf или .doc?
                 Приложите и отправьте его нам.</p>
-              <button class="questionnaire-form__button button-smooth button-smooth--alternative" type="button">
+              <div class="questionnaire-form__button button-smooth button-smooth--alternative">
                 <label class="questionnaire-form__file-label" for="file">Загрузить файл</label>
                 <input class="questionnaire-form__file visually-hidden" name="file" id="file" type="file">
-              </button>
+              </div>
             </div>
             <div class="questionnaire-form__input-wrapper questionnaire-form__input-wrapper--checkbox">
-              <label class="questionnaire-form__input-text" for="pegi"><p class="questionnaire-form__paragraph">Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных для использования предоставляемых возможностей Веб-сервиса.</p>
-                <p class="questionnaire-form__paragraph">Я достиг(ла) 18-летнего возраста</p>
+              <label class="questionnaire-form__input-text" for="pegi"><span class="questionnaire-form__paragraph">Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных для использования предоставляемых возможностей Веб-сервиса.</span>
+                <span class="questionnaire-form__paragraph">Я достиг(ла) 18-летнего возраста</span>
                 </label>
               <input type="checkbox" id="pegi" name="consent" required>
             </div>
@@ -160,7 +160,7 @@
             <button class="vacancy-form__submit-button button-smooth" type="submit">откликнуться на вакансию</button>
           </form>
       </section>
-      <section class="page__section advantages">
+      <section class="page__section page__section--darker advantages">
         <h2 class="advantages__title section-title">Преимущества Компании</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--pd-taller">
@@ -243,7 +243,7 @@
           </div>
         </div>
       </article>
-      <section class="page__section career">
+      <section class="page__section page__section--darker career">
         <h2 class="career__title section-title">Карьерный рост</h2>
         <p class="career__review">Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются по карьерной лестнице.</p>
         <p class="career__review">Мы ценим стремление к развитию и предоставляем все необходимые для этого условия.</p>
@@ -261,7 +261,7 @@
               </svg>
               <span class="visually-hidden">Следующий слайд</span>
             </button>
-            <ul class="slider__list">
+            <ul class="slider__list slider__list--career">
               <li class="slider__item career-card">
                   <picture>
                     <source media="(min-width: 320px)" srcset="images/employee-man-1@1x.webp 1x, images/employee-man-1@2x.webp 2x"  width="238" height="240" type="image/webp">
@@ -316,7 +316,7 @@
           <button class="join-button-wrapper__join-button button-smooth" type="button">Присоединиться к команде</button>
         </div>
       </section>
-      <section class="page__section contacts">
+      <section class="page__section page__section--darker contacts">
         <h2 class="section-title contacts__title">Контакты</h2>
         <ul class="contacts__filter filter filter--gap-wider">
           <li class="filter__item">
@@ -348,7 +348,7 @@
               <svg class="contacts__icon" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./icons/stack.svg#marker"></use>
               </svg>
-              <a href="https://yandex.ru/maps/-/CDfuIIyG" class="contacts__text contacts__text--decoration">ул. Заозёрная, д. 8 к. 2, офис<br> 202 (7 мин. пешком от метро Фрунзенская)</a>
+              <a class="contacts__text contacts__text--decoration" href="https://yandex.ru/maps/-/CDfuIIyG">ул. Заозёрная, д. 8 к. 2, офис<br> 202 (7 мин. пешком от метро Фрунзенская)</a>
             </address>
           </li>
         </ul>

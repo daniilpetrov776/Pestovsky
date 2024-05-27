@@ -11,6 +11,7 @@
   align-self: center;
   cursor: pointer;
   transition: background-color 0.3s;
+  min-width: 200px;
 
   &--alternative {
     font-size: 12px;
@@ -22,4 +23,3 @@
     background-color: #901016;
   }
 }
-

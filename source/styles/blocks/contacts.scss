@@ -24,16 +24,16 @@
   flex-flow: wrap;
 
   &::after {
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 32px;
-  border: solid 0.5px #21A038;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -6px;
-}
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    border: solid 0.5px #21a038;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6px;
+  }
 }
 
 .contacts__link {

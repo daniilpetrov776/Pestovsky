@@ -39,16 +39,13 @@
   line-height: 22px;
   font-weight: 700;
   text-align: center;
-}
-
-.questionnaire__text-wrapper {
-  margin: 45px 0 100px;
-}
-
-.questionnaire__text {
   margin: 0;
 
   &:not(:last-child) {
     margin: 0 0 23px;
   }
+}
+
+.questionnaire__text-wrapper {
+  margin: 45px 0 100px;
 }

@@ -1,16 +1,20 @@
 .advantages {
   background-color: #111311;
+  padding: 0;
 }
 
 .advantages__title {
   margin: 45px 0 20px;
+
+  padding: 0 20px;
 }
 
 .advantages__list {
-  padding: 0;
+  padding: 0 20px;
   margin: 0 0 45px;
   list-style-type: none;
   font-weight: 700;
+  overflow: hidden;
 }
 
 .advantages__item {
@@ -38,18 +42,17 @@
     content: "";
     width: 15px;
     height: 15px;
-    background-image: url(../../images/plus.svg);
+    background-image: url("../../images/plus.svg");
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
   }
-
 }
 
 .advantages__item-text {
   position: relative;
 
-&::after {
+  &::after {
     position: absolute;
     content: "";
     width: 100vw;
