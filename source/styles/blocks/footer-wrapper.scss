@@ -17,8 +17,8 @@
 }
 
 .footer-wrapper__list {
-  padding: 0;
-  margin: 41px 0 0;
+  padding: 0 50px;
+  margin: 22px 0 0;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -30,6 +30,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+}
+
+.footer-wrapper__credit {
+  margin: 12px 0 30px;
 }
 
 .footer-wrapper__link {

@@ -9,8 +9,8 @@
 }
 
 .contacts__list {
-  padding: 0 20px;
-  margin: 40px 0 42px;
+  padding: 0 22px 0 0;
+  margin: 40px 0 44px;
   list-style-type: none;
   display: flex;
   flex-flow: column wrap;
@@ -47,6 +47,7 @@
 .contacts__text {
   font-weight: 700;
   font-size: 12px;
+  line-height: 25px;
   margin-left: 17px;
   color: #ffffff;
 
@@ -68,7 +69,7 @@
 }
 
 .contacts__socials {
-  margin: 0 0 42px;
+  margin: 0 0 43px;
 }
 
 .contacts__icon {
