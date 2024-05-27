@@ -24,7 +24,7 @@
   display: flex;
   width: 100%;
   max-width: 320px;
-  gap: 20px;
+  gap: 50px;
   min-height: 182px;
 
   &--career {
@@ -32,7 +32,8 @@
   }
 
   &--rect {
-    transform: translateX(-356px);
+    transform: translateX(-426px);
+    transition-duration: 0.1s;
   }
 }
 
@@ -42,6 +43,7 @@
   background-color: #d9d9d9;
   align-self: center;
   border-radius: 10px;
+  transition: scale 0.1s;
 
   &:not(.slider__item--rect-active) {
     background: linear-gradient(to left, #d9d9d900, #d9d9d970);
@@ -54,8 +56,7 @@
 }
 
 .slider__item--rect-active {
-  min-width: 165px;
-  min-height: 182px;
+  transform: scale(1.25);
   background-color: #d9d9d9;
   box-shadow: 0 0 0 5px #d9d9d940;
 }
