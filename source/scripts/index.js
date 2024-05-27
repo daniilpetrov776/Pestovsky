@@ -39,63 +39,63 @@ submitSuccess.onclick = function () {
   success.classList.add('hidden');
 };
 
-let currentIndex = 3;
+// let currentIndex = 3;
 
 // Получаем из нашего контейнера список всех элементов и забираем по индексу нужный, чтобы затем добавить / убрать с него класс активного
-const slider = document.querySelector('.slider__list--rect');
-const dots = document.querySelector('.slider-dots__list');
-const imageWidth = 180;
-const getImageByIndex = (index) => {
+// const slider = document.querySelector('.slider__list--rect');
+// const dots = document.querySelector('.slider-dots__list');
+// const imageWidth = 180;
+// const getImageByIndex = (index) => {
 
-  return slider.querySelectorAll('li')[index];
-};
+//   return slider.querySelectorAll('li')[index];
+// };
 
-const getDotByIndex = (index) => {
-  return dots.querySelectorAll('li')[index].firstElementChild;
-}
+// const getDotByIndex = (index) => {
+//   return dots.querySelectorAll('li')[index].firstElementChild;
+// }
 
 // Стрелочка влево
-const previous = () => {
-  const previousIndex = currentIndex - 1
-  const currentElement = getImageByIndex(currentIndex);
-  const previousElement = getImageByIndex(previousIndex);
-  const currentDot = getDotByIndex(currentIndex);
-  const previousDot = getDotByIndex(previousIndex);
-  currentElement.classList.remove('slider__item--rect-active');
-  previousElement.classList.add('slider__item--rect-active');
-  currentDot.classList.remove('slider-dots__dot--active');
-  previousDot.classList.add('slider-dots__dot--active');
-  slider.style.transform = ('translateX(180px)');
-  // Здесь у контейнера именяем transform: translateX на положительную ширину одной картинки (с учётом одного гэпа)
-  // Здесь убираем активный класс с текущего элемента и ставим на предыдущий
-};
+// const previous = () => {
+//   const previousIndex = currentIndex - 1
+//   const currentElement = getImageByIndex(currentIndex);
+//   const previousElement = getImageByIndex(previousIndex);
+//   const currentDot = getDotByIndex(currentIndex);
+//   const previousDot = getDotByIndex(previousIndex);
+//   currentElement.classList.remove('slider__item--rect-active');
+//   previousElement.classList.add('slider__item--rect-active');
+//   currentDot.classList.remove('slider-dots__dot--active');
+//   previousDot.classList.add('slider-dots__dot--active');
+//   slider.style.transform = ('translateX(180px)');
+// Здесь у контейнера именяем transform: translateX на положительную ширину одной картинки (с учётом одного гэпа)
+// Здесь убираем активный класс с текущего элемента и ставим на предыдущий
+// };
 
 // Стрелочка вправо
-const next = () => {
-  const nextIndex = currentIndex + 1
-  const currentElement = getImageByIndex(currentIndex);
-  const nextElement = getImageByIndex(nextIndex);
-  const currentDot = getDotByIndex(currentIndex);
-  const nextDot = getDotByIndex(nextIndex);
-  currentElement.classList.remove('slider__item--rect-active');
-  nextElement.classList.add('slider__item--rect-active');
-  currentDot.classList.remove('slider-dots__dot--active');
-  nextDot.classList.add('slider-dots__dot--active');
-  slider.style.transform = ('translateX(-180px)');
-  // Здесь у контейнера именяем transform: translateX на отрицательную ширину одной картинки (с учётом одного гэпа)
-  // Здесь убираем активный класс с текущего элемента и ставим на следующий
-};
+// const next = () => {
+//   const nextIndex = currentIndex + 1
+//   const currentElement = getImageByIndex(currentIndex);
+//   const nextElement = getImageByIndex(nextIndex);
+//   const currentDot = getDotByIndex(currentIndex);
+//   const nextDot = getDotByIndex(nextIndex);
+//   currentElement.classList.remove('slider__item--rect-active');
+//   nextElement.classList.add('slider__item--rect-active');
+//   currentDot.classList.remove('slider-dots__dot--active');
+//   nextDot.classList.add('slider-dots__dot--active');
+//   slider.style.transform = ('translateX(-180px)');
+// Здесь у контейнера именяем transform: translateX на отрицательную ширину одной картинки (с учётом одного гэпа)
+// Здесь убираем активный класс с текущего элемента и ставим на следующий
+// };
 
 // В индекс отдаём индекс точки или картинки. При клике на точку или картинку вызываем одну и ту же функцию (эту)
-const setActive = (index) => {
-  const difference = index - currentIndex;
-  const isIncrease = difference > 0;
-  const iterations = Math.abs(difference);
+// const setActive = (index) => {
+//   const difference = index - currentIndex;
+//   const isIncrease = difference > 0;
+//   const iterations = Math.abs(difference);
 
-  // let i = 0;
-  for (let i = 0; i < iterations; i++) {
-    (isIncrease ? next : previous)();
-  }
+//   // let i = 0;
+//   for (let i = 0; i < iterations; i++) {
+//     (isIncrease ? next : previous)();
+//   }
 //   (function iterate () {
 //     (isIncrease ? next : previous)();
 
@@ -103,11 +103,11 @@ const setActive = (index) => {
 //   // })();
 // };
 
-slider.addEventListener('click', (evt) => {
-  setActive(Array.from(slider.children).findIndex((el) => evt.target === el));
-});
+// slider.addEventListener('click', (evt) => {
+//   setActive(Array.from(slider.children).findIndex((el) => evt.target === el));
+// });
 
-dots.addEventListener('click', (evt) => {
-  setActive(Array.from(dots.children).findIndex((el) => evt.target === el));
-  console.log(Array.from(dots.children).findIndex((el) => evt.target === el));
-});
+// dots.addEventListener('click', (evt) => {
+//   setActive(Array.from(dots.children).findIndex((el) => evt.target === el));
+//   console.log(Array.from(dots.children).findIndex((el) => evt.target === el));
+// });
