@@ -19,7 +19,7 @@
 
 .advantages__item {
   position: relative;
-  padding: 15px 0;
+  padding: 15px 10px 15px 0;
 
   &--pd-taller {
     padding: 16.5px 0;
@@ -31,7 +31,7 @@
     width: 25px;
     height: 25px;
     background-color: #21a038;
-    right: 0;
+    right: 2px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -43,7 +43,7 @@
     width: 15px;
     height: 15px;
     background-image: url("../../images/plus.svg");
-    right: 5px;
+    right: 7px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -51,6 +51,8 @@
 
 .advantages__item-text {
   position: relative;
+  font-size: 17px;
+  word-spacing: 2px;
 
   &::after {
     position: absolute;
@@ -59,6 +61,6 @@
     height: 3px;
     background-color: #999999;
     left: calc((100vw - 100%) / -2);
-    bottom: -16px;
+    bottom: -17px;
   }
 }

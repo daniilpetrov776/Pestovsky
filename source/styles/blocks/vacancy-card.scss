@@ -6,9 +6,15 @@
   gap: 20px;
   border-radius: 30px;
   min-height: 130px;
-  padding-left: 65px;
+  min-width: 320px;
+  padding-left: 60px;
   font-weight: 700;
   position: relative;
+  padding: 30px 62px;
+
+  &:first-child {
+    gap: 23px;
+  }
 
   &::before {
     position: absolute;
@@ -38,6 +44,13 @@
   text-transform: uppercase;
   color: #21a038;
   position: relative;
+  width: 194px;
+  word-spacing: -3px;
+
+  &--small {
+    text-transform: none
+    ;
+  }
 
   &::before {
     position: absolute;
@@ -65,6 +78,7 @@
 
 .vacancy-card__label {
   position: relative;
+  width: 194px;
 
   &::before {
     position: absolute;

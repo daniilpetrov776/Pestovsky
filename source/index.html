@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Тестовое задание</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Строительство домов под ключ.">
+    <link rel="preload" href="images/hero-image@1x.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -112,7 +114,7 @@
           <dt class="about-us__parameter">>30</dt>
           <dd class="about-us__defenition">Лет среди лидеров рынка</dd>
           <dt class="about-us__parameter">100</dt>
-          <dd class="about-us__defenition">Домов и бань сдаём ежегодно</dd>
+          <dd class="about-us__defenition about-us__defenition--thin">Домов и бань сдаём ежегодно</dd>
         </dl>
       </section>
       <section class="page__section choose-department">
@@ -149,7 +151,7 @@
               <li class="vacancy-cards__vacancy-card vacancy-card">
                 <label class="vacancy-card__label" for="logistics">Логист</label>
                 <input class="vacancy-card__input visually-hidden" type="radio" name="vacancy" id="logistics" value="Логист">
-                <span class="vacancy-card__salary">Обсуждается на собеседовании</span>
+                <span class="vacancy-card__salary vacancy-card__salary--small">Обсуждается на собеседовании</span>
               </li>
               <li class="vacancy-cards__vacancy-card vacancy-card">
                 <label class="vacancy-card__label" for="planner">Проектировщик</label>
@@ -265,7 +267,7 @@
               <li class="slider__item career-card">
                   <picture>
                     <source media="(min-width: 320px)" srcset="images/employee-man-1@1x.webp 1x, images/employee-man-1@2x.webp 2x"  width="238" height="240" type="image/webp">
-                    <img class="career-card__image" src="images/employee-man-1@1x.png" srcset="images/employee-man-1@2x.png 2x" width="238" height="240" alt="Успешный сотрудник компании - прораб.">
+                    <img class="career-card__image" loading="lazy" src="images/employee-man-1@1x.png" srcset="images/employee-man-1@2x.png 2x" width="238" height="240" alt="Успешный сотрудник компании - прораб.">
                   </picture>
                 <h3 class="career-card__title">Олег Воробьёв</h3>
                 <p class="career-card__vacancy-title">Прораб</p>
@@ -278,7 +280,7 @@
               <li class="slider__item career-card">
                 <picture>
                   <source media="(min-width: 320px)" srcset="images/employee-woman-1@1x.webp 1x, images/employee-woman-1@2x.webp 2x" width="216" height="240" type="image/webp">
-                  <img class="career-card__image" src="images/employee-woman-1@1x.png" srcset="images/employee-woman-1@2x.png 2x" width="216" height="240" alt="Успешный сотрудник компании - руководитель финансовой службы.">
+                  <img class="career-card__image" loading="lazy" src="images/employee-woman-1@1x.png" srcset="images/employee-woman-1@2x.png 2x" width="216" height="240" alt="Успешный сотрудник компании - руководитель финансовой службы.">
                 </picture>
                 <h3 class="career-card__title">Мария Обухова</h3>
                 <p class="career-card__vacancy-title">Руководитель финансовой службы</p>
@@ -291,7 +293,7 @@
               <li class="slider__item career-card">
                 <picture>
                   <source media="(min-width: 320px)" srcset="images/employee-man-2@1x.webp 1x, images/employee-man-2@2x.webp 2x" width="240" height="240" type="image/webp">
-                  <img class="career-card__image" src="images/employee-man-2@1x.png" srcset="images/employee-man-2@1x.webp 2x" width="240" height="240" alt="Успешный сотрудник компании - прораб.">
+                  <img class="career-card__image" loading="lazy" src="images/employee-man-2@1x.png" srcset="images/employee-man-2@1x.webp 2x" width="240" height="240" alt="Успешный сотрудник компании - прораб.">
                 </picture>
                 <h3 class="career-card__title">Даниил Басенков</h3>
                 <p class="career-card__vacancy-title">Менеджер по снабжению</p>
@@ -378,7 +380,7 @@
         <div class="contacts__map-wrapper map-wrapper">
           <picture>
             <source media="(min-width: 320px)" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" width="360" height="224" type="image/webp">
-            <img class="map-wrapper__map-image" src="images/map@1x.png" srcset="images/map@2x.png 2x" width="360" height="224" alt="Наш адрес на карте.">
+            <img class="map-wrapper__map-image" loading="lazy" src="images/map@1x.png" srcset="images/map@2x.png 2x" width="360" height="224" alt="Наш адрес на карте.">
           </picture>
         </div>
       </section>
@@ -397,7 +399,7 @@
           </li>
         </ul>
         <picture>
-          <img class="footer-wrapper__logo-alpha" src="images/logo-alpha.svg" width="159" height="25" alt="Логотип компании Alpha marketing">
+          <img class="footer-wrapper__logo-alpha" loading="lazy" src="images/logo-alpha.svg" width="159" height="25" alt="Логотип компании Alpha marketing">
         </picture>
       </div>
     </footer>

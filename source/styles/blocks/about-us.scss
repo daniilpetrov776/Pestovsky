@@ -39,6 +39,10 @@
   line-height: 20px;
   padding: 0 45px;
 
+  &--thin {
+    padding: 0 20px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 35px;
   }

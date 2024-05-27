@@ -7,6 +7,18 @@
   background-position: center;
   min-height: 567px;
   padding: 0 20px 35px;
+
+  @supports (background-image: url("../../images/cloud@1x.webp")) {
+    background-image: url("../../images/cloud@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/cloud@2x.png");
+
+    @supports (background-image: url("../../images/cloud@2x.webp")) {
+      background-image: url("../../images/cloud@2x.webp");
+    }
+  }
 }
 
 .join-us__slogan-wrapper {
