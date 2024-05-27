@@ -1,0 +1,25 @@
+.button-smooth {
+  font-size: 12px;
+  line-height: 20px;
+  align-items: center;
+  background-color: #dd3037;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 36px;
+  align-self: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 200px;
+
+  &--alternative {
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #21a038;
+  }
+
+  &:hover {
+    background-color: #901016;
+  }
+}

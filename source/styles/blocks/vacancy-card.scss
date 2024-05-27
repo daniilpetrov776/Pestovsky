@@ -1,0 +1,103 @@
+.vacancy-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 3px #999999;
+  gap: 20px;
+  border-radius: 30px;
+  min-height: 130px;
+  min-width: 320px;
+  font-weight: 700;
+  position: relative;
+  padding: 29px 62px;
+
+  &:first-child {
+    gap: 23px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #21a038;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../../images/plus.svg");
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.vacancy-card__salary {
+  text-transform: uppercase;
+  color: #21a038;
+  position: relative;
+  width: 194px;
+  word-spacing: -3px;
+
+  &--small {
+    text-transform: none;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../../icons/ruble.svg");
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.vacancy-card__label {
+  position: relative;
+  width: 194px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url("../../icons/person.svg");
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

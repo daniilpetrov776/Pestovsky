@@ -1,0 +1,47 @@
+.join-us {
+  background-image:
+    url("../../images/company-people.svg"),
+    url("../../images/cloud@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: center 85px, 50%;
+  min-height: 567px;
+  padding: 0 20px 35px;
+
+  @supports (background-image: url("../../images/company-people.svg"),
+  url("../../images/cloud@1x.webp")) {
+    background-image:
+      url("../../images/company-people.svg"),
+      url("../../images/cloud@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../images/company-people.svg"),
+      url("../../images/cloud@2x.png");
+
+    @supports (background-image: ("../../images/company-people.svg"),
+    url("../../images/cloud@2x.webp")) {
+      background-image:
+        url("../../images/company-people.svg"),
+        url("../../images/cloud@2x.webp");
+    }
+  }
+}
+
+.join-us__slogan-wrapper {
+  padding: 45px 0 0;
+}
+
+.join-us__slogan {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  word-spacing: -3px;
+}
+
+.join-us__join-button-wrapper {
+  margin-top: 120px;
+}

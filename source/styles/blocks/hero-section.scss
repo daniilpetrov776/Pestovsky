@@ -1,0 +1,39 @@
+.hero-section {
+  min-height: 500px;
+  background-image: url("../../images/hero-image@1x.jpg");
+  background-color: #000000;
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  @supports (background-image: url("../../images/hero-image@1x.webp")) {
+    background-image: url("../../images/hero-image@1x.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/hero-image@2x.jpg");
+
+    @supports (background-image: url("../../images/hero-image@2x.webp")) {
+      background-image: url("../../images/hero-image@2x.webp");
+    }
+  }
+}
+
+.hero-section__title {
+  font-size: 29px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-top: 271px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero-section__text {
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero-section__button {
+  margin-top: 35px;
+}

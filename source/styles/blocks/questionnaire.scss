@@ -1,0 +1,72 @@
+.questionnaire {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  z-index: 2;
+  align-items: flex-end;
+  padding: 0;
+  background-color: #262626;
+}
+
+.questionnaire__title {
+  margin: 45px 0 37px;
+
+  &--success {
+    margin: 45px 0 74px;
+  }
+}
+
+.questionnaire__button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 7px;
+  cursor: pointer;
+}
+
+.questionnaire__footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  background-color: #111311;
+  width: 100%;
+  position: relative;
+  min-height: 44px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    left: calc((100vw - 100%) / -2);
+    background: #111311;
+    z-index: -1;
+  }
+}
+
+.questionnaire__submit-button {
+  margin: 20px 0 45px;
+
+  &--success {
+    margin: 0 0 45px;
+    min-width: 156px;
+  }
+}
+
+
+.questionnaire__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin: 0 0 15px;
+  }
+}
+
+.questionnaire__text-wrapper {
+  margin: 45px 0 100px;
+  padding: 0 40px;
+}

@@ -1,0 +1,23 @@
+.page__section {
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-flow: wrap column;
+  padding: 0 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 101%;
+    left: calc((100vw - 100%) / -2);
+    background: #212121;
+    z-index: -2;
+  }
+
+  &--darker::after {
+    background: #111311;
+  }
+}

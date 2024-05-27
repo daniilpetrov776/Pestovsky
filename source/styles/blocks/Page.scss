@@ -1,0 +1,22 @@
+.page {
+  width: 100%;
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.page__main {
+  width: 360px;
+}
+
+.page__body {
+  width: 360px;
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
