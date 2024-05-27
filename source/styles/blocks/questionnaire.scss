@@ -1,4 +1,8 @@
 .questionnaire {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  z-index: 2;
   align-items: flex-end;
   padding: 0;
   background-color: #262626;
@@ -17,6 +21,7 @@
   border: none;
   position: absolute;
   right: 7px;
+  cursor: pointer;
 }
 
 .questionnaire__footer {
@@ -27,6 +32,16 @@
   width: 100%;
   position: relative;
   min-height: 44px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    left: calc((100vw - 100%) / -2);
+    background: #111311;
+    z-index: -1;
+  }
 }
 
 .questionnaire__submit-button {

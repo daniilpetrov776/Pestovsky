@@ -10,18 +10,21 @@
 
   @supports (background-image: url("../../images/company-people.svg"),
   url("../../images/cloud@1x.webp")) {
-    background-image: url("../../images/company-people.svg"),
-    url("../../images/cloud@1x.webp");
+    background-image:
+      url("../../images/company-people.svg"),
+      url("../../images/cloud@1x.webp");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/company-people.svg"),
-    url("../../images/cloud@2x.png");
+    background-image:
+      url("../../images/company-people.svg"),
+      url("../../images/cloud@2x.png");
 
     @supports (background-image: ("../../images/company-people.svg"),
     url("../../images/cloud@2x.webp")) {
-      background-image: url("../../images/company-people.svg"),
-      url("../../images/cloud@2x.webp");
+      background-image:
+        url("../../images/company-people.svg"),
+        url("../../images/cloud@2x.webp");
     }
   }
 }

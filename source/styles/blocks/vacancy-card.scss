@@ -7,7 +7,6 @@
   border-radius: 30px;
   min-height: 130px;
   min-width: 320px;
-  padding-left: 60px;
   font-weight: 700;
   position: relative;
   padding: 30px 62px;
@@ -48,8 +47,7 @@
   word-spacing: -3px;
 
   &--small {
-    text-transform: none
-    ;
+    text-transform: none;
   }
 
   &::before {

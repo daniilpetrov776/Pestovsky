@@ -13,6 +13,10 @@
   }
 }
 
+.slider__list-wrapper {
+  overflow: hidden;
+}
+
 .slider__list {
   padding: 0;
   margin: 0;
@@ -24,7 +28,7 @@
   min-height: 182px;
 
   &--career {
-    overflow: hidden;
+    overflow: visible;
   }
 
   &--rect {
